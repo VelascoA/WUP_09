@@ -16,6 +16,7 @@ output:
 ```{r include=FALSE,echo=FALSE}
 require(tigerstats)
 require(tidyverse)
+require(leaps)
 ```
 ```{r}
 All_Fish<- read.csv(file="Fish.csv")

@@ -35,6 +35,7 @@ Perch<- select(Perch, -Species)
 
 
 ## Perch
+
 ```{r}
 library(leaps)
 regsubsets.out <-
@@ -53,9 +54,10 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 
 
 ### Best Models
-The best model to use for Perch would be height and width.
+The best model to use for Perch would be height and width.It is considered the best model because it has the highest adjusted R^2 allowing it to sit at the top of the graph,with a y of 0.9400 making it bigger and higher up than the rest of the subsets. 
 ### Best Two regressor model
-The best two regressor model would be height and width. 
+The best two regressor model would be height and width, because adjusted R^2 test out all the levels, giving the these two as the best subsets. 
+ 
 
 ## Pike
 
@@ -83,8 +85,10 @@ library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
 ### Best Models
+The best models are length1 ,length2, length3, height and width. It is considered the best model because it  had the highest adjusted R^2 allowing it to sit at the top of the graph, with a y height sqre of 0.980, making it bigger and higher up than the rest. 
 
 ### Best Two regressor model
+The best two regressor model is length1 and length2, because adjusted R^2 test out all the levels, giving the these two as the best subsets. 
 
 ## Roach
 

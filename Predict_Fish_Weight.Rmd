@@ -57,7 +57,7 @@ subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2
 The best model to use for Perch would be height and width.It is considered the best model because it has the highest adjusted R^2 allowing it to sit at the top of the graph,with a y of 0.9400 making it bigger and higher up than the rest of the subsets. 
 
 ### Best Two regressor model
-The best two regressor model would be height and width, because adjusted R^2 test out all the levels, giving the these two as the best subsets. 
+The best two regressor model would also be height and width, because adjusted R^2 test out all the levels, giving the these two as the best with the subset size of 2. 
  
 
 ## Pike
@@ -115,11 +115,13 @@ as.data.frame(summary.out$outmat)
 library(car)
 subsets(regsubsets.out,statistic="adjr2",legend="bottomright",main="Adjusted R^2")
 ```
-### Best Models
 
+### Best Models
 The best models are length3 and width. It is considered the best model because it  had the highest adjusted R^2 allowing it to sit at the top of the graph, with a y height sqre of 0.850, making it bigger and higher up than the rest. 
 
 ### Best Two regressor model
 The best two regressor model is length3 and width, because adjusted R^2 test out all the levels, giving the these two as the best subsets with a subset size of two, but it is the same as the best model overall. 
 
 ## Final Summary Statements
+For each fish we used an adjusted R^2 model that showed which variables were best to determine the best way to predict the weight each fish. For perch and roach only two variables were required to get the best prediction. Having the common variable of width but Perch using height and roach using length3 as their second variables. However Pike needed all factors taken into account to predict the best weight. For perch and roach the best models were the same as the best two best regressor models. Although the Pike's two best regressor model is variable length1 and length2.
+

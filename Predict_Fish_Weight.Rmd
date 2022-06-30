@@ -17,6 +17,7 @@ output:
 require(tigerstats)
 require(tidyverse)
 require(leaps)
+
 ```
 ```{r}
 All_Fish<- read.csv(file="Fish.csv")
@@ -93,6 +94,7 @@ The best models are length1 ,length2, length3, height and width. It is considere
 The best two regressor model is length1 and length2, because adjusted R^2 test out all the levels, giving the these two as the best subsets. 
 
 ## Roach
+
 ```{r}
 Roach<- filter(All_Fish,Species=="Roach")
 ```
